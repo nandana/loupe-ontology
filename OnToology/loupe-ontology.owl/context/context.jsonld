@@ -1,0 +1,250 @@
+{
+  "@context" : {
+    "PropertyRangeDatatypePartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#PropertyRangeDatatypePartition"
+    },
+    "ObjectPropertyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#ObjectPropertyPartition"
+    },
+    "datasetTripleCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#datasetTripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "LanguagePatternPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#LanguagePatternPartition"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "TriplePatternPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#TriplePatternPartition"
+    },
+    "stringCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#stringCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PropertyRangeClassPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#PropertyRangeClassPartition"
+    },
+    "hasLanguagePattern" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasLanguagePattern",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "aboutLanguage" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#aboutLanguage",
+      "@type" : "@id"
+    },
+    "classCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#classCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "objectPropertyCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#objectPropertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "vocabularyCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#vocabularyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "PropertyDomainPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#PropertyDomainPartition"
+    },
+    "VocabularyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#VocabularyPartition"
+    },
+    "includesProperty" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#includesProperty",
+      "@type" : "@id"
+    },
+    "hasPredicate" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasPredicate",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "blankObjectCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#blankObjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "hasElementPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasElementPartition",
+      "@type" : "@id"
+    },
+    "tripleCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#tripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "aboutProperty" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#aboutProperty",
+      "@type" : "@id"
+    },
+    "ClassPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#ClassPartition"
+    },
+    "PropertyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#PropertyPartition"
+    },
+    "hasNamedGraph" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasNamedGraph",
+      "@type" : "@id"
+    },
+    "hasCommonInstancesPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasCommonInstancesPartition",
+      "@type" : "@id"
+    },
+    "hasTriplePattern" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasTriplePattern",
+      "@type" : "@id"
+    },
+    "distinctSubjectCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#distinctSubjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "aboutClass" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#aboutClass",
+      "@type" : "@id"
+    },
+    "blankSubjectCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#blankSubjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "ClassPropertyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#ClassPropertyPartition"
+    },
+    "propertyCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#propertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "classSharingInstances" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#classSharingInstances",
+      "@type" : "@id"
+    },
+    "ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "NamedGraph" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#NamedGraph"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "aboutNamedGraph" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#aboutNamedGraph",
+      "@type" : "@id"
+    },
+    "CommonInstancesPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#CommonInstancesPartition"
+    },
+    "hasSubjectType" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasSubjectType",
+      "@type" : "@id"
+    },
+    "usedInDataset" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#usedInDataset",
+      "@type" : "@id"
+    },
+    "hasVocabularyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasVocabularyPartition",
+      "@type" : "@id"
+    },
+    "literalCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#literalCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "DatatypePropertyPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#DatatypePropertyPartition"
+    },
+    "entityCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#entityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "typedEntityCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#typedEntityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "patternTripleCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#patternTripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "datatypePropertyCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#datatypePropertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "includesClass" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#includesClass",
+      "@type" : "@id"
+    },
+    "Language" : {
+      "@id" : "http://lexvo.org/ontology#Language"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "hasLanguage" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasLanguage",
+      "@type" : "@id"
+    },
+    "distinctObjectCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#distinctObjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "aboutNamespace" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#aboutNamespace",
+      "@type" : "@id"
+    },
+    "OntologyElementPartition" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#OntologyElementPartition"
+    },
+    "labelledEntityCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#labelledEntityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "langLabelledEntityCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#langLabelledEntityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "commonInstancesCount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#commonInstancesCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "graphTriplecount" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#graphTriplecount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasObjectType" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#hasObjectType",
+      "@type" : "@id"
+    },
+    "RDFDataset" : {
+      "@id" : "http://loupe.linkeddata.es/def/ontology/core#RDFDataset"
+    }
+  }
+}
