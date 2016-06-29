@@ -10,12 +10,12 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY core "http://loupe.linkeddata.es/def/ontology/core#" >
+    <!ENTITY core "http://ont-loupe.linkeddata.es/def/core#" >
 ]>
 
 
-<rdf:RDF xmlns="http://loupe.linkeddata.es/def/ontology/core#"
-     xml:base="http://loupe.linkeddata.es/def/ontology/core"
+<rdf:RDF xmlns="http://ont-loupe.linkeddata.es/def/core#"
+     xml:base="http://ont-loupe.linkeddata.es/def/core"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
@@ -23,11 +23,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:core="http://loupe.linkeddata.es/def/ontology/core#"
+     xmlns:core="http://ont-loupe.linkeddata.es/def/core#"
      xmlns:ontology="http://lexvo.org/ontology#">
-    <owl:Ontology rdf:about="http://loupe.linkeddata.es/def/ontology/core">
+    <owl:Ontology rdf:about="http://ont-loupe.linkeddata.es/def/core">
         <dc:title xml:lang="en">Loupe ontology</dc:title>
-        <vann:preferredNamespaceUri>http://loupe.linkeddata.es/def/ontology/core#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>http://ont-loupe.linkeddata.es/def/core#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset.</rdfs:comment>
         <dc:publisher>http://oeg-upm.net</dc:publisher>
         <vann:preferredNamespacePrefix>loupe</vann:preferredNamespacePrefix>
@@ -74,7 +74,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#aboutClass -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#aboutClass -->
 
     <owl:ObjectProperty rdf:about="&core;aboutClass">
         <rdfs:label xml:lang="en">aboutClass</rdfs:label>
@@ -92,7 +92,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#aboutLanguage -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#aboutLanguage -->
 
     <owl:ObjectProperty rdf:about="&core;aboutLanguage">
         <rdfs:label xml:lang="en">aboutLanguage</rdfs:label>
@@ -102,7 +102,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#aboutNamedGraph -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#aboutNamedGraph -->
 
     <owl:ObjectProperty rdf:about="&core;aboutNamedGraph">
         <rdfs:label xml:lang="en">aboutNamedGraph</rdfs:label>
@@ -112,7 +112,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#aboutNamespace -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#aboutNamespace -->
 
     <owl:ObjectProperty rdf:about="&core;aboutNamespace">
         <rdfs:label xml:lang="en">aboutNamespace</rdfs:label>
@@ -122,7 +122,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#aboutProperty -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#aboutProperty -->
 
     <owl:ObjectProperty rdf:about="&core;aboutProperty">
         <rdfs:label xml:lang="en">aboutProperty</rdfs:label>
@@ -139,7 +139,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#classSharingInstances -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#classSharingInstances -->
 
     <owl:ObjectProperty rdf:about="&core;classSharingInstances">
         <rdfs:label xml:lang="en">classSharingInstances</rdfs:label>
@@ -149,7 +149,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasCommonInstancesPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition -->
 
     <owl:ObjectProperty rdf:about="&core;hasCommonInstancesPartition">
         <rdfs:label xml:lang="en">hasCommonInstancesPartition</rdfs:label>
@@ -159,7 +159,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasElementPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasElementPartition -->
 
     <owl:ObjectProperty rdf:about="&core;hasElementPartition">
         <rdfs:label xml:lang="en">hasElementPartition</rdfs:label>
@@ -169,7 +169,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasLanguage -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasLanguage -->
 
     <owl:ObjectProperty rdf:about="&core;hasLanguage">
         <rdfs:label xml:lang="en">hasLanguage</rdfs:label>
@@ -179,7 +179,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasLanguagePattern -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern -->
 
     <owl:ObjectProperty rdf:about="&core;hasLanguagePattern">
         <rdfs:label xml:lang="en">hasLanguagePattern</rdfs:label>
@@ -189,7 +189,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasNamedGraph -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasNamedGraph -->
 
     <owl:ObjectProperty rdf:about="&core;hasNamedGraph">
         <rdfs:label xml:lang="en">hasNamedGraph</rdfs:label>
@@ -199,7 +199,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasObjectType -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasObjectType -->
 
     <owl:ObjectProperty rdf:about="&core;hasObjectType">
         <rdfs:label xml:lang="en">hasObjectType</rdfs:label>
@@ -209,7 +209,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasPredicate -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasPredicate -->
 
     <owl:ObjectProperty rdf:about="&core;hasPredicate">
         <rdfs:label xml:lang="en">hasPredicate</rdfs:label>
@@ -219,7 +219,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasSubjectType -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasSubjectType -->
 
     <owl:ObjectProperty rdf:about="&core;hasSubjectType">
         <rdfs:label xml:lang="en">hasSubjectType</rdfs:label>
@@ -229,7 +229,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasTriplePattern -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasTriplePattern -->
 
     <owl:ObjectProperty rdf:about="&core;hasTriplePattern">
         <rdfs:label xml:lang="en">hasTriplePattern</rdfs:label>
@@ -239,7 +239,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#hasVocabularyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition -->
 
     <owl:ObjectProperty rdf:about="&core;hasVocabularyPartition">
         <rdfs:label xml:lang="en">hasVocabularyPartition</rdfs:label>
@@ -249,7 +249,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#includesClass -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#includesClass -->
 
     <owl:ObjectProperty rdf:about="&core;includesClass">
         <rdfs:label xml:lang="en">includesClass</rdfs:label>
@@ -259,7 +259,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#includesProperty -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#includesProperty -->
 
     <owl:ObjectProperty rdf:about="&core;includesProperty">
         <rdfs:label xml:lang="en">includesProperty</rdfs:label>
@@ -269,7 +269,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#usedInDataset -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#usedInDataset -->
 
     <owl:ObjectProperty rdf:about="&core;usedInDataset">
         <rdfs:label xml:lang="en">usedInDataset</rdfs:label>
@@ -291,7 +291,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#blankObjectCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#blankObjectCount -->
 
     <owl:DatatypeProperty rdf:about="&core;blankObjectCount">
         <rdfs:label xml:lang="en">blankObjectCount</rdfs:label>
@@ -300,7 +300,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#blankSubjectCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#blankSubjectCount -->
 
     <owl:DatatypeProperty rdf:about="&core;blankSubjectCount">
         <rdfs:label xml:lang="en">blankSubjectCount</rdfs:label>
@@ -309,7 +309,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#classCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#classCount -->
 
     <owl:DatatypeProperty rdf:about="&core;classCount">
         <rdfs:label xml:lang="en">classCount</rdfs:label>
@@ -318,7 +318,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#commonInstancesCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#commonInstancesCount -->
 
     <owl:DatatypeProperty rdf:about="&core;commonInstancesCount">
         <rdfs:label xml:lang="en">commonInstancesCount</rdfs:label>
@@ -328,7 +328,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#datasetTripleCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#datasetTripleCount -->
 
     <owl:DatatypeProperty rdf:about="&core;datasetTripleCount">
         <rdfs:label xml:lang="en">datasetTripleCount</rdfs:label>
@@ -338,7 +338,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#datatypePropertyCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount -->
 
     <owl:DatatypeProperty rdf:about="&core;datatypePropertyCount">
         <rdfs:label xml:lang="en">datatypePropertyCount</rdfs:label>
@@ -347,7 +347,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#distinctObjectCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#distinctObjectCount -->
 
     <owl:DatatypeProperty rdf:about="&core;distinctObjectCount">
         <rdfs:label xml:lang="en">distinctObjectCount</rdfs:label>
@@ -356,7 +356,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#distinctSubjectCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount -->
 
     <owl:DatatypeProperty rdf:about="&core;distinctSubjectCount">
         <rdfs:label xml:lang="en">distinctSubjectCount</rdfs:label>
@@ -365,7 +365,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#entityCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#entityCount -->
 
     <owl:DatatypeProperty rdf:about="&core;entityCount">
         <rdfs:label xml:lang="en">entityCount</rdfs:label>
@@ -374,7 +374,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#graphTriplecount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#graphTriplecount -->
 
     <owl:DatatypeProperty rdf:about="&core;graphTriplecount">
         <rdfs:label xml:lang="en">graphTriplecount</rdfs:label>
@@ -385,7 +385,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#labelledEntityCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#labelledEntityCount -->
 
     <owl:DatatypeProperty rdf:about="&core;labelledEntityCount">
         <rdfs:label xml:lang="en">labelledEntityCount</rdfs:label>
@@ -394,7 +394,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#langLabelledEntityCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#langLabelledEntityCount -->
 
     <owl:DatatypeProperty rdf:about="&core;langLabelledEntityCount">
         <rdfs:label xml:lang="en">langLabelledEntityCount</rdfs:label>
@@ -403,7 +403,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#literalCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#literalCount -->
 
     <owl:DatatypeProperty rdf:about="&core;literalCount">
         <rdfs:label xml:lang="en">literalCount</rdfs:label>
@@ -412,7 +412,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#objectPropertyCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#objectPropertyCount -->
 
     <owl:DatatypeProperty rdf:about="&core;objectPropertyCount">
         <rdfs:label xml:lang="en">objectPropertyCount</rdfs:label>
@@ -421,7 +421,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#patternTripleCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#patternTripleCount -->
 
     <owl:DatatypeProperty rdf:about="&core;patternTripleCount">
         <rdfs:label xml:lang="en">patternTripleCount</rdfs:label>
@@ -432,7 +432,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#propertyCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#propertyCount -->
 
     <owl:DatatypeProperty rdf:about="&core;propertyCount">
         <rdfs:label xml:lang="en">propertyCount</rdfs:label>
@@ -441,7 +441,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#stringCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#stringCount -->
 
     <owl:DatatypeProperty rdf:about="&core;stringCount">
         <rdfs:label xml:lang="en">stringCount</rdfs:label>
@@ -450,7 +450,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#tripleCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#tripleCount -->
 
     <owl:DatatypeProperty rdf:about="&core;tripleCount">
         <rdfs:label xml:lang="en">tripleCount</rdfs:label>
@@ -459,7 +459,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#typedEntityCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#typedEntityCount -->
 
     <owl:DatatypeProperty rdf:about="&core;typedEntityCount">
         <rdfs:label xml:lang="en">typedEntityCount</rdfs:label>
@@ -468,7 +468,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#vocabularyCount -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#vocabularyCount -->
 
     <owl:DatatypeProperty rdf:about="&core;vocabularyCount">
         <rdfs:label xml:lang="en">vocabularyCount</rdfs:label>
@@ -494,7 +494,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#ClassPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#ClassPartition -->
 
     <owl:Class rdf:about="&core;ClassPartition">
         <rdfs:label xml:lang="en">ClassPartition</rdfs:label>
@@ -503,7 +503,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#ClassPropertyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition -->
 
     <owl:Class rdf:about="&core;ClassPropertyPartition">
         <rdfs:label xml:lang="en">ClassPropertyPartition</rdfs:label>
@@ -511,7 +511,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#CommonInstancesPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition -->
 
     <owl:Class rdf:about="&core;CommonInstancesPartition">
         <rdfs:label xml:lang="en">CommonInstancesPartition</rdfs:label>
@@ -527,7 +527,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#DatatypePropertyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition -->
 
     <owl:Class rdf:about="&core;DatatypePropertyPartition">
         <rdfs:label xml:lang="en">DatatypePropertyPartition</rdfs:label>
@@ -536,7 +536,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#LanguagePatternPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition -->
 
     <owl:Class rdf:about="&core;LanguagePatternPartition">
         <rdfs:label xml:lang="en">LanguagePatternPartition</rdfs:label>
@@ -545,7 +545,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#NamedGraph -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#NamedGraph -->
 
     <owl:Class rdf:about="&core;NamedGraph">
         <rdfs:label xml:lang="en">NamedGraph</rdfs:label>
@@ -554,7 +554,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#ObjectPropertyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition -->
 
     <owl:Class rdf:about="&core;ObjectPropertyPartition">
         <rdfs:label xml:lang="en">ObjectPropertyPartition</rdfs:label>
@@ -563,7 +563,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#OntologyElementPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition -->
 
     <owl:Class rdf:about="&core;OntologyElementPartition">
         <rdfs:label xml:lang="en">OntologyElementPartition</rdfs:label>
@@ -572,7 +572,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#PropertyDomainPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition -->
 
     <owl:Class rdf:about="&core;PropertyDomainPartition">
         <rdfs:label xml:lang="en">PropertyDomainPartition</rdfs:label>
@@ -581,7 +581,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#PropertyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#PropertyPartition -->
 
     <owl:Class rdf:about="&core;PropertyPartition">
         <rdfs:label xml:lang="en">PropertyPartition</rdfs:label>
@@ -590,7 +590,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#PropertyRangeClassPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition -->
 
     <owl:Class rdf:about="&core;PropertyRangeClassPartition">
         <rdfs:label xml:lang="en">PropertyRangeClassPartition</rdfs:label>
@@ -599,7 +599,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#PropertyRangeDatatypePartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition -->
 
     <owl:Class rdf:about="&core;PropertyRangeDatatypePartition">
         <rdfs:label xml:lang="en">PropertyRangeDatatypePartition</rdfs:label>
@@ -607,7 +607,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#RDFDataset -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#RDFDataset -->
 
     <owl:Class rdf:about="&core;RDFDataset">
         <rdfs:label xml:lang="en">RDFDataset</rdfs:label>
@@ -616,7 +616,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#TriplePatternPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition -->
 
     <owl:Class rdf:about="&core;TriplePatternPartition">
         <rdfs:label xml:lang="en">TriplePatternPartition</rdfs:label>
@@ -624,7 +624,7 @@
     
 
 
-    <!-- http://loupe.linkeddata.es/def/ontology/core#VocabularyPartition -->
+    <!-- http://ont-loupe.linkeddata.es/def/core#VocabularyPartition -->
 
     <owl:Class rdf:about="&core;VocabularyPartition">
         <rdfs:label xml:lang="en">VocabularyPartition</rdfs:label>
