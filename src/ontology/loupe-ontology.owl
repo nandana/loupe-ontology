@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 
-
 <!DOCTYPE rdf:RDF [
     <!ENTITY terms "http://purl.org/dc/terms/" >
     <!ENTITY ontology "http://lexvo.org/ontology#" >
@@ -12,7 +11,6 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY core "http://ont-loupe.linkeddata.es/def/core#" >
 ]>
-
 
 <rdf:RDF xmlns="http://ont-loupe.linkeddata.es/def/core#"
      xml:base="http://ont-loupe.linkeddata.es/def/core"
