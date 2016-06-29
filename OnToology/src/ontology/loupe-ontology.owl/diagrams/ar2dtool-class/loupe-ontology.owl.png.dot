@@ -1,22 +1,22 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "core:ClassPartition" "core:PropertyPartition" "core:PropertyDomainPartition" "core:OntologyElementPartition" "1cb95b55:1559b52e0ee:-7ffc" "core:CommonInstancesPartition" "rdfs:Resource" "core:LanguagePatternPartition" "core:NamedGraph" "rdfs:Class" "rdf:Property" "core:TriplePatternPartition" "core:ClassPropertyPartition" "ontology:Language" "1cb95b55:1559b52e0ee:-7ff8" "core:VocabularyPartition" "core:PropertyRangeClassPartition" "core:RDFDataset" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "core:ClassPartition" "core:PropertyPartition" "core:PropertyDomainPartition" "core:OntologyElementPartition" "core:CommonInstancesPartition" "rdfs:Resource" "core:LanguagePatternPartition" "core:NamedGraph" "rdfs:Class" "-1153f1a:1559b7773be:-7ffc" "-1153f1a:1559b7773be:-7ff8" "rdf:Property" "core:TriplePatternPartition" "core:ClassPropertyPartition" "ontology:Language" "core:VocabularyPartition" "core:PropertyRangeClassPartition" "core:RDFDataset" ; /*classes style*/
 	"core:graphTriplecount" -> "core:tripleCount" [ label = "rdfs:subPropertyOf" ];
 	"core:patternTripleCount" -> "core:tripleCount" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "1cb95b55:1559b52e0ee:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-1153f1a:1559b7773be:-7ff6" [ label = "rdf:rest" ];
+	"NULL" -> "-1153f1a:1559b7773be:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "core:PropertyPartition" [ label = "rdf:first" ];
 	"NULL" -> "core:classSharingInstances" [ label = "owl:onProperty" ];
-	"NULL" -> "1cb95b55:1559b52e0ee:-7ff6" [ label = "rdf:rest" ];
 	"NULL" -> "core:PropertyDomainPartition" [ label = "rdf:first" ];
 	"NULL" -> "core:PropertyRangeClassPartition" [ label = "rdf:first" ];
+	"NULL" -> "-1153f1a:1559b7773be:-7ff7" [ label = "owl:unionOf" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "rdfs:Class" [ label = "owl:onClass" ];
-	"NULL" -> "1cb95b55:1559b52e0ee:-7ff7" [ label = "owl:unionOf" ];
-	"NULL" -> "1cb95b55:1559b52e0ee:-7ffb" [ label = "owl:unionOf" ];
 	"NULL" -> "core:ClassPropertyPartition" [ label = "rdf:first" ];
 	"NULL" -> "core:ClassPartition" [ label = "rdf:first" ];
-	"NULL" -> "1cb95b55:1559b52e0ee:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "-1153f1a:1559b7773be:-7ffb" [ label = "owl:unionOf" ];
+	"NULL" -> "-1153f1a:1559b7773be:-7ffa" [ label = "rdf:rest" ];
 	"core:datasetTripleCount" -> "core:tripleCount" [ label = "rdfs:subPropertyOf" ];
 	"http://loupe.linkeddata.es/def/ontology/core" -> "http://www.apache.org/licenses/LICENSE-2.0" [ label = "terms:license" ];
 	"owl:Thing" -> "xsd:integer" [ label = "core:datasetTripleCount" ];
@@ -50,13 +50,13 @@ node [shape = rectangle, color="orange"]; "core:ClassPartition" "core:PropertyPa
 	"owl:Thing" -> "xsd:integer" [ label = "core:datatypePropertyCount" ];
 	"owl:Thing" -> "xsd:integer" [ label = "core:classCount" ];
 	"core:TriplePatternPartition" -> "rdf:Property" [ label = "core:hasPredicate" ];
-	"1cb95b55:1559b52e0ee:-7ff8" -> "rdf:Property" [ label = "core:aboutProperty" ];
+	"-1153f1a:1559b7773be:-7ff8" -> "rdf:Property" [ label = "core:aboutProperty" ];
 	"owl:Thing" -> "xsd:integer" [ label = "core:propertyCount" ];
 	"core:RDFDataset" -> "core:LanguagePatternPartition" [ label = "core:hasLanguagePattern" ];
 	"owl:Thing" -> "xsd:integer" [ label = "core:blankSubjectCount" ];
 	"core:RDFDataset" -> "core:OntologyElementPartition" [ label = "core:hasElementPartition" ];
 	"core:RDFDataset" -> "ontology:Language" [ label = "core:hasLanguage" ];
 	"core:RDFDataset" -> "core:TriplePatternPartition" [ label = "core:hasTriplePattern" ];
-	"1cb95b55:1559b52e0ee:-7ffc" -> "rdfs:Class" [ label = "core:aboutClass" ];
+	"-1153f1a:1559b7773be:-7ffc" -> "rdfs:Class" [ label = "core:aboutClass" ];
 
 }
