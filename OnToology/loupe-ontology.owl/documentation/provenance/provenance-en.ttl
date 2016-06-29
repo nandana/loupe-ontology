@@ -1,7 +1,9 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<..\index-en.html> a prov:Entity;
+<http://loupe.linkeddata.es/def/ontology/core#> a prov:Entity;
 	 dc:title "Loupe ontology";
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Nandana Mihindukulasooriya, María Poveda Villalón, Raúl García Castro ".];
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "29/06/2016";
 .

@@ -28,7 +28,7 @@
     <owl:Ontology rdf:about="http://loupe.linkeddata.es/def/ontology/core">
         <dc:title xml:lang="en">Loupe ontology</dc:title>
         <vann:preferredNamespaceUri>http://loupe.linkeddata.es/def/ontology/core#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="en">Ontolog for describing data in http://loupe.linkeddata.es. It models....</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset.</rdfs:comment>
         <dc:publisher>http://oeg-upm.net</dc:publisher>
         <vann:preferredNamespacePrefix>loupe</vann:preferredNamespacePrefix>
         <terms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
