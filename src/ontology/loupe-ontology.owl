@@ -17,9 +17,9 @@
         <dc:publisher>http://oeg-upm.net</dc:publisher>
         <rdfs:comment xml:lang="en">The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset.</rdfs:comment>
         <rdfs:label xml:lang="en">Loupe Ontology</rdfs:label>
-        <terms:creator rdf:datatype="&xsd;anyURI">http://id.nandana.org/card#me</terms:creator>
-        <terms:creator rdf:datatype="&xsd;anyURI">http://purl.org/net/mpoveda</terms:creator>
-        <terms:creator rdf:datatype="&xsd;anyURI">www.garcia-castro.com/foaf.rdf</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://id.nandana.org/card#me</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/net/mpoveda</terms:creator>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">www.garcia-castro.com/foaf.rdf</terms:creator>
         <terms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.1</owl:versionInfo>
         <vann:preferredNamespaceUri>http://ont-loupe.linkeddata.es/def/core#</vann:preferredNamespaceUri>
