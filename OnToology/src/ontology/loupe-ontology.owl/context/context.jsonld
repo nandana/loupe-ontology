@@ -1,0 +1,281 @@
+{
+  "@context" : {
+    "PropertyRangeDatatypePartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition"
+    },
+    "ObjectPropertyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition"
+    },
+    "datasetTripleCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#datasetTripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "LanguagePatternPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "TriplePatternPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"
+    },
+    "stringCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#stringCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "PropertyRangeClassPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition"
+    },
+    "hasLanguagePattern" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern",
+      "@type" : "@id"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "aboutLanguage" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#aboutLanguage",
+      "@type" : "@id"
+    },
+    "classCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#classCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "objectPropertyCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#objectPropertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "vocabularyCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#vocabularyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "PropertyDomainPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition"
+    },
+    "VocabularyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"
+    },
+    "includesProperty" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#includesProperty",
+      "@type" : "@id"
+    },
+    "hasPredicate" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasPredicate",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "instanceCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#instanceCount"
+    },
+    "blankObjectCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#blankObjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "hasElementPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasElementPartition",
+      "@type" : "@id"
+    },
+    "tripleCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#tripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "hasPropertyRangeClassPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition",
+      "@type" : "@id"
+    },
+    "aboutProperty" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#aboutProperty",
+      "@type" : "@id"
+    },
+    "ClassPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#ClassPartition"
+    },
+    "PropertyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#PropertyPartition"
+    },
+    "hasClassPropertyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "hasNamedGraph" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasNamedGraph",
+      "@type" : "@id"
+    },
+    "hasPropertyRangeDatatypePartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeDatatypePartition",
+      "@type" : "@id"
+    },
+    "hasCommonInstancesPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition",
+      "@type" : "@id"
+    },
+    "hasTriplePattern" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasTriplePattern",
+      "@type" : "@id"
+    },
+    "distinctSubjectCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "aboutClass" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#aboutClass",
+      "@type" : "@id"
+    },
+    "blankSubjectCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#blankSubjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "ClassPropertyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition"
+    },
+    "propertyCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#propertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "hasPropertyDomainPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition",
+      "@type" : "@id"
+    },
+    "Datatype" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Datatype"
+    },
+    "classSharingInstances" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#classSharingInstances",
+      "@type" : "@id"
+    },
+    "ObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#ObjectProperty"
+    },
+    "langLabelledStringCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "NamedGraph" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#NamedGraph"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "aboutNamedGraph" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#aboutNamedGraph",
+      "@type" : "@id"
+    },
+    "CommonInstancesPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"
+    },
+    "hasSubjectType" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasSubjectType",
+      "@type" : "@id"
+    },
+    "usedInDataset" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#usedInDataset",
+      "@type" : "@id"
+    },
+    "hasVocabularyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition",
+      "@type" : "@id"
+    },
+    "literalCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#literalCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "DatatypePropertyPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition"
+    },
+    "entityCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#entityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "typedEntityCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#typedEntityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "patternTripleCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#patternTripleCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "datatypePropertyCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "includesClass" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#includesClass",
+      "@type" : "@id"
+    },
+    "Language" : {
+      "@id" : "http://lexvo.org/ontology#Language"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "hasLanguage" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasLanguage",
+      "@type" : "@id"
+    },
+    "distinctObjectCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#distinctObjectCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "aboutNamespace" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#aboutNamespace",
+      "@type" : "@id"
+    },
+    "OntologyElementPartition" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"
+    },
+    "labelledEntityCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#labelledEntityCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "DatatypeProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    },
+    "commonInstancesCount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#commonInstancesCount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "graphTriplecount" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#graphTriplecount",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "hasObjectType" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#hasObjectType",
+      "@type" : "@id"
+    },
+    "RDFDataset" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#RDFDataset"
+    }
+  }
+}
