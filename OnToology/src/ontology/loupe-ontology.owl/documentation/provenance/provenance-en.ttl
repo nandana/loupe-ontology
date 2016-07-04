@@ -1,7 +1,15 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<..\index-en.html> a prov:Entity;
+<http://ont-loupe.linkeddata.es/def/core> a prov:Entity;
 	 dc:title "Loupe ontology";
+	 prov:wasAttributedTo <http://nandana.org>;
+	 dc:creator <http://nandana.org>;
+	 prov:wasAttributedTo < http://mariapoveda.github.io>;
+	 dc:creator < http://mariapoveda.github.io>;
+	 prov:wasAttributedTo < http://www.garcia-castro.com/>;
+	 dc:creator < http://www.garcia-castro.com/>;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://ont-loupe.linkeddata.es/def/core>;
+	 prov:wasGeneratedAt "7th of July, 2016";
 .
