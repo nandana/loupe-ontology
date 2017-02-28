@@ -1,0 +1,502 @@
+<rdf:RDF
+    xmlns:ontology="http://lexvo.org/ontology#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:core="http://ont-loupe.linkeddata.es/def/core#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:terms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:vann="http://purl.org/vocab/vann/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" > 
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount">
+    <rdfs:label xml:lang="en">distinctSubjectCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct subjects in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasObjectType">
+    <rdfs:label xml:lang="en">hasObjectType</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern">
+    <rdfs:label xml:lang="en">hasLanguagePattern</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition">
+    <rdfs:label xml:lang="en">DatatypePropertyPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition">
+    <rdfs:label xml:lang="en">LanguagePatternPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition">
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#ClassPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#objectPropertyCount">
+    <rdfs:label xml:lang="en">objectPropertyCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct object properties used in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#propertyCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:rest rdf:nodeID="A1"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:rest rdf:nodeID="A3"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#ClassPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:rest rdf:nodeID="A5"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount">
+    <rdfs:label xml:lang="en">datatypePropertyCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of datatype properties in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#propertyCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#version">
+    <rdfs:label xml:lang="en">version</rdfs:label>
+    <rdfs:comment xml:lang="en">indicates the version of the dataset</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#aboutProperty">
+    <rdfs:label xml:lang="en">aboutProperty</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:nodeID="A6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#DatatypeProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/publisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#RDFDataset">
+    <rdfs:label xml:lang="en">RDFDataset</rdfs:label>
+    <rdfs:comment xml:lang="en">An RDF dataset as defined by the the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation, i.e., a collection of RDF graphs, and comprises.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Datatype">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:rest rdf:nodeID="A0"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasPredicate">
+    <rdfs:label xml:lang="en">hasPredicate</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition">
+    <rdfs:label xml:lang="en">OntologyElementPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#labelledEntityCount">
+    <rdfs:label xml:lang="en">labelledEntityCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of entities (IRIs and blank nodes) with a label. For counting labels, we consider the properties rdfs:label. skos:prefLabel.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition">
+    <rdfs:label xml:lang="en">TriplePatternPartition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core">
+    <vann:preferredNamespacePrefix>loupe</vann:preferredNamespacePrefix>
+    <terms:license rdf:resource="http://www.apache.org/licenses/LICENSE-2.0"/>
+    <rdfs:comment xml:lang="en">The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset.</rdfs:comment>
+    <owl:versionInfo>0.1.1</owl:versionInfo>
+    <rdfs:label xml:lang="en">Loupe Ontology</rdfs:label>
+    <dc:title xml:lang="en">Loupe ontology</dc:title>
+    <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://id.nandana.org/card#me</terms:creator>
+    <vann:preferredNamespaceUri>http://ont-loupe.linkeddata.es/def/core#</vann:preferredNamespaceUri>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/net/mpoveda</terms:creator>
+    <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">www.garcia-castro.com/foaf.rdf</terms:creator>
+    <dc:publisher>http://oeg-upm.net</dc:publisher>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#ObjectProperty">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#classSharingInstances">
+    <rdfs:label xml:lang="en">classSharingInstances</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:rest rdf:nodeID="A9"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#literalCount">
+    <rdfs:label xml:lang="en">literalCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct literals in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#aboutNamespace">
+    <rdfs:label xml:lang="en">aboutNamespace</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A10"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#ClassPartition">
+    <rdfs:label xml:lang="en">ClassPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeDatatypePartition">
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#blankSubjectCount">
+    <rdfs:label xml:lang="en">blankSubjectCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of blank node subjects in a collection of triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasNamedGraph">
+    <rdfs:label xml:lang="en">hasNamedGraph</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#NamedGraph"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#NamedGraph">
+    <rdfs:label xml:lang="en">NamedGraph</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount">
+    <rdfs:label xml:lang="en">language labelled string count</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of string objects with a language tag in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#stringCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition">
+    <rdfs:label xml:lang="en">ObjectPropertyPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <owl:onClass rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://ont-loupe.linkeddata.es/def/core#classSharingInstances"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition">
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#distinctObjectCount">
+    <rdfs:label xml:lang="en">distinctObjectCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct objects in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition">
+    <rdfs:label xml:lang="en">PropertyDomainPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#stringCount">
+    <rdfs:label xml:lang="en">stringCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of string objects in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#literalCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#includesClass">
+    <rdfs:label xml:lang="en">includesClass</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition">
+    <rdfs:label xml:lang="en">hasCommonInstancesPartition</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#entityCount">
+    <rdfs:label xml:lang="en">entityCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct entities in a given collection of RDF triples. Entities are defined in the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation as any IRI or literal that denotes something in the world. Anything can be an entity, including physical things, documents, abstract concepts, numbers and strings.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#typedEntityCount">
+    <rdfs:label xml:lang="en">typedEntityCount</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasLanguage">
+    <rdfs:label xml:lang="en">hasLanguage</rdfs:label>
+    <rdfs:range rdf:resource="http://lexvo.org/ontology#Language"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasElementPartition">
+    <rdfs:label xml:lang="en">hasElementPartition</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <owl:inverseOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#usedInDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#aboutLanguage">
+    <rdfs:label xml:lang="en">aboutLanguage</rdfs:label>
+    <rdfs:range rdf:resource="http://lexvo.org/ontology#Language"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A8"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#PropertyPartition">
+    <rdfs:label xml:lang="en">PropertyPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#datasetTripleCount">
+    <rdfs:seeAlso rdf:resource="http://ont-loupe.linkeddata.es/def/core"/>
+    <rdfs:label xml:lang="en">datasetTripleCount</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#tripleCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:rest rdf:nodeID="A13"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#blankObjectCount">
+    <rdfs:label xml:lang="en">blankObjectCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of blank node objects in a collection of triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition">
+    <rdfs:label xml:lang="en">PropertyRangeDatatypePartition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#propertyCount">
+    <rdfs:label xml:lang="en">propertyCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct properties used in a given collection of RDF triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A14">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#commonInstancesCount">
+    <rdfs:label xml:lang="en">commonInstancesCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total count of common instances of given two classes in a collection of triples. The count is calculated using the explicit triples materialized in the collection without any inferencing. (e.g., if there is an instance x that is defined as "x is an instance of Class A" and "x is an instance of Class B", then x is counted as a common instance for class A and B.)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A15">
+    <owl:members rdf:nodeID="A16"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#classCount">
+    <rdfs:label xml:lang="en">classCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct RDFS or OWL classes utilized in a collection of triples.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#aboutNamedGraph">
+    <rdfs:label xml:lang="en">aboutNamedGraph</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#NamedGraph"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <owl:unionOf rdf:nodeID="A17"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#includesProperty">
+    <rdfs:label xml:lang="en">includesProperty</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/dcat#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/title">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition">
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#usedInDataset">
+    <rdfs:label xml:lang="en">usedInDataset</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A13">
+    <rdf:rest rdf:nodeID="A12"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasSubjectType">
+    <rdfs:label xml:lang="en">hasSubjectType</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition">
+    <rdfs:label xml:lang="en">VocabularyPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#patternTripleCount">
+    <rdfs:label xml:lang="en">patternTripleCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of a triples conforming to a given abstract triple pattern.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#tripleCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A18">
+    <owl:unionOf rdf:nodeID="A2"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition">
+    <rdfs:label xml:lang="en">hasVocabularyPartition</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#VocabularyPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://lexvo.org/ontology#Language">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#graphTriplecount">
+    <rdfs:label xml:lang="en">graphTriplecount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of triples in an RDF graph.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#NamedGraph"/>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#tripleCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#tripleCount">
+    <rdfs:label xml:lang="en">tripleCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of triples in a collection of triples (e.g., RDF Dataset, or RDF Graph).</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition">
+    <rdfs:label xml:lang="en">PropertyRangeClassPartition</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition">
+    <rdfs:label xml:lang="en">CommonInstancesPartition</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="A11"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:rest rdf:nodeID="A14"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A16">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition">
+    <rdfs:label xml:lang="en">ClassPropertyPartition</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A17">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:resource="http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#instanceCount">
+    <rdfs:comment xml:lang="en">The total number of instances of a given class.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://ont-loupe.linkeddata.es/def/core#entityCount"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#hasTriplePattern">
+    <rdfs:label xml:lang="en">hasTriplePattern</rdfs:label>
+    <rdfs:range rdf:resource="http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition"/>
+    <rdfs:domain rdf:resource="http://ont-loupe.linkeddata.es/def/core#RDFDataset"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#aboutClass">
+    <rdfs:label xml:lang="en">aboutClass</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:domain rdf:nodeID="A18"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ont-loupe.linkeddata.es/def/core#vocabularyCount">
+    <rdfs:label xml:lang="en">vocabularyCount</rdfs:label>
+    <rdfs:comment xml:lang="en">The total number of distinct vocabularies used in a givel collection of RDF triples either in a class declaration or as a property.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+</rdf:RDF>

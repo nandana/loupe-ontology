@@ -186,6 +186,10 @@
     "CommonInstancesPartition" : {
       "@id" : "http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition"
     },
+    "version" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#version",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "hasSubjectType" : {
       "@id" : "http://ont-loupe.linkeddata.es/def/core#hasSubjectType",
       "@type" : "@id"
