@@ -246,6 +246,9 @@
       "@id" : "http://ont-loupe.linkeddata.es/def/core#distinctObjectCount",
       "@type" : "http://www.w3.org/2001/XMLSchema#long"
     },
+    "RDFDataProfile" : {
+      "@id" : "http://ont-loupe.linkeddata.es/def/core#RDFDataProfile"
+    },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },

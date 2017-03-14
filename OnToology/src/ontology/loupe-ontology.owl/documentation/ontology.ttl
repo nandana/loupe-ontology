@@ -1,76 +1,76 @@
 @prefix :        <http://ont-loupe.linkeddata.es/def/core#> .
 @prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix loupe:   <http://ont-loupe.linkeddata.es/def/core#> .
 @prefix terms:   <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix vann:    <http://purl.org/vocab/vann/> .
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
-@prefix core:    <http://ont-loupe.linkeddata.es/def/core#> .
 @prefix ontology:  <http://lexvo.org/ontology#> .
 
-core:distinctSubjectCount
+loupe:distinctSubjectCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct subjects in a given collection of RDF triples."@en ;
       rdfs:label "distinctSubjectCount"@en ;
       rdfs:range xsd:long .
 
-core:hasObjectType
+loupe:hasObjectType
       a       owl:ObjectProperty ;
-      rdfs:domain core:TriplePatternPartition ;
+      rdfs:domain loupe:TriplePatternPartition ;
       rdfs:label "hasObjectType"@en ;
       rdfs:range rdfs:Resource .
 
 vann:preferredNamespaceUri
       a       owl:AnnotationProperty .
 
-core:hasLanguagePattern
+loupe:hasLanguagePattern
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasLanguagePattern"@en ;
-      rdfs:range core:LanguagePatternPartition .
+      rdfs:range loupe:LanguagePatternPartition .
 
-core:DatatypePropertyPartition
+loupe:DatatypePropertyPartition
       a       owl:Class ;
       rdfs:label "DatatypePropertyPartition"@en ;
-      rdfs:subClassOf core:PropertyPartition .
+      rdfs:subClassOf loupe:PropertyPartition .
 
-core:LanguagePatternPartition
+loupe:LanguagePatternPartition
       a       owl:Class ;
       rdfs:label "LanguagePatternPartition"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:hasClassPropertyPartition
+loupe:hasClassPropertyPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:ClassPartition ;
-      rdfs:range core:ClassPropertyPartition .
+      rdfs:domain loupe:ClassPartition ;
+      rdfs:range loupe:ClassPropertyPartition .
 
-core:objectPropertyCount
+loupe:objectPropertyCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct object properties used in a given collection of RDF triples."@en ;
       rdfs:label "objectPropertyCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:propertyCount .
+      rdfs:subPropertyOf loupe:propertyCount .
 
-core:datatypePropertyCount
+loupe:datatypePropertyCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of datatype properties in a given collection of RDF triples."@en ;
       rdfs:label "datatypePropertyCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:propertyCount .
+      rdfs:subPropertyOf loupe:propertyCount .
 
-core:version
+loupe:version
       a       owl:DatatypeProperty ;
       rdfs:comment "indicates the version of the dataset"@en ;
       rdfs:label "version"@en ;
       rdfs:range xsd:string .
 
-core:aboutProperty
+loupe:aboutProperty
       a       owl:ObjectProperty ;
       rdfs:domain
               [ a       owl:Class ;
-                owl:unionOf (core:ClassPropertyPartition core:PropertyPartition)
+                owl:unionOf (loupe:ClassPropertyPartition loupe:PropertyPartition)
               ] ;
       rdfs:label "aboutProperty"@en ;
       rdfs:range rdf:Property .
@@ -82,7 +82,7 @@ owl:DatatypeProperty
 dc:publisher
       a       owl:AnnotationProperty .
 
-core:RDFDataset
+loupe:RDFDataset
       a       owl:Class ;
       rdfs:comment "An RDF dataset as defined by the the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation, i.e., a collection of RDF graphs, and comprises."@en ;
       rdfs:label "RDFDataset"@en ;
@@ -95,25 +95,25 @@ rdfs:Datatype
 terms:license
       a       owl:AnnotationProperty .
 
-core:hasPredicate
+loupe:hasPredicate
       a       owl:ObjectProperty ;
-      rdfs:domain core:TriplePatternPartition ;
+      rdfs:domain loupe:TriplePatternPartition ;
       rdfs:label "hasPredicate"@en ;
       rdfs:range rdf:Property .
 
-core:OntologyElementPartition
+loupe:OntologyElementPartition
       a       owl:Class ;
       rdfs:label "OntologyElementPartition"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:labelledEntityCount
+loupe:labelledEntityCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of entities (IRIs and blank nodes) with a label. For counting labels, we consider the properties rdfs:label. skos:prefLabel."@en ;
       rdfs:label "labelledEntityCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:TriplePatternPartition
+loupe:TriplePatternPartition
       a       owl:Class ;
       rdfs:label "TriplePatternPartition"@en .
 
@@ -124,7 +124,7 @@ core:TriplePatternPartition
       dc:publisher "http://oeg-upm.net" ;
       dc:title "Loupe ontology"@en ;
       terms:creator "http://purl.org/net/mpoveda"^^xsd:anyURI , "http://id.nandana.org/card#me"^^xsd:anyURI , "www.garcia-castro.com/foaf.rdf"^^xsd:anyURI ;
-      terms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+      terms:license <https://creativecommons.org/licenses/by/4.0/> ;
       vann:preferredNamespacePrefix
               "loupe" ;
       vann:preferredNamespaceUri
@@ -135,189 +135,191 @@ owl:ObjectProperty
       a       owl:Class ;
       rdfs:subClassOf rdf:Property .
 
-core:classSharingInstances
+loupe:classSharingInstances
       a       owl:ObjectProperty ;
-      rdfs:domain core:CommonInstancesPartition ;
+      rdfs:domain loupe:CommonInstancesPartition ;
       rdfs:label "classSharingInstances"@en ;
       rdfs:range rdfs:Class .
 
-core:literalCount
+loupe:literalCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct literals in a given collection of RDF triples."@en ;
       rdfs:label "literalCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:aboutNamespace
+loupe:aboutNamespace
       a       owl:ObjectProperty ;
-      rdfs:domain core:VocabularyPartition ;
+      rdfs:domain loupe:VocabularyPartition ;
       rdfs:label "aboutNamespace"@en ;
       rdfs:range rdfs:Resource .
 
-core:ClassPartition
+loupe:ClassPartition
       a       owl:Class ;
       rdfs:label "ClassPartition"@en ;
-      rdfs:subClassOf core:OntologyElementPartition .
+      rdfs:subClassOf loupe:OntologyElementPartition .
 
-core:hasPropertyRangeDatatypePartition
+loupe:hasPropertyRangeDatatypePartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:DatatypePropertyPartition ;
-      rdfs:range core:PropertyRangeDatatypePartition .
+      rdfs:domain loupe:DatatypePropertyPartition ;
+      rdfs:range loupe:PropertyRangeDatatypePartition .
 
 vann:preferredNamespacePrefix
       a       owl:AnnotationProperty .
 
-core:blankSubjectCount
+loupe:blankSubjectCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of blank node subjects in a collection of triples."@en ;
       rdfs:label "blankSubjectCount"@en ;
       rdfs:range xsd:long .
 
-core:hasNamedGraph
+loupe:hasNamedGraph
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasNamedGraph"@en ;
-      rdfs:range core:NamedGraph .
+      rdfs:range loupe:NamedGraph .
 
-core:NamedGraph
+loupe:NamedGraph
       a       owl:Class ;
       rdfs:label "NamedGraph"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:langLabelledStringCount
+loupe:langLabelledStringCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of string objects with a language tag in a given collection of RDF triples."@en ;
       rdfs:label "language labelled string count"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:stringCount .
+      rdfs:subPropertyOf loupe:stringCount .
 
-core:ObjectPropertyPartition
+loupe:ObjectPropertyPartition
       a       owl:Class ;
       rdfs:label "ObjectPropertyPartition"@en ;
-      rdfs:subClassOf core:PropertyPartition .
+      rdfs:subClassOf loupe:PropertyPartition .
 
-core:hasPropertyDomainPartition
+loupe:hasPropertyDomainPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:PropertyPartition ;
-      rdfs:range core:PropertyDomainPartition .
+      rdfs:domain loupe:PropertyPartition ;
+      rdfs:range loupe:PropertyDomainPartition .
 
-core:distinctObjectCount
+loupe:distinctObjectCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct objects in a given collection of RDF triples."@en ;
       rdfs:label "distinctObjectCount"@en ;
       rdfs:range xsd:long .
 
-core:PropertyDomainPartition
+loupe:PropertyDomainPartition
       a       owl:Class ;
       rdfs:label "PropertyDomainPartition"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:stringCount
+loupe:stringCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of string objects in a given collection of RDF triples."@en ;
       rdfs:label "stringCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:literalCount .
+      rdfs:subPropertyOf loupe:literalCount .
 
-core:includesClass
+loupe:includesClass
       a       owl:ObjectProperty ;
-      rdfs:domain core:VocabularyPartition ;
+      rdfs:domain loupe:VocabularyPartition ;
       rdfs:label "includesClass"@en ;
       rdfs:range rdfs:Class .
 
-core:hasCommonInstancesPartition
+loupe:hasCommonInstancesPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasCommonInstancesPartition"@en ;
-      rdfs:range core:CommonInstancesPartition .
+      rdfs:range loupe:CommonInstancesPartition .
 
-core:entityCount
+loupe:entityCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct entities in a given collection of RDF triples. Entities are defined in the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation as any IRI or literal that denotes something in the world. Anything can be an entity, including physical things, documents, abstract concepts, numbers and strings."@en ;
       rdfs:label "entityCount"@en ;
       rdfs:range xsd:long .
 
-core:typedEntityCount
+loupe:typedEntityCount
       a       owl:DatatypeProperty ;
       rdfs:label "typedEntityCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:hasLanguage
+loupe:hasLanguage
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasLanguage"@en ;
       rdfs:range ontology:Language .
 
-core:hasElementPartition
+loupe:hasElementPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasElementPartition"@en ;
-      rdfs:range core:OntologyElementPartition ;
-      owl:inverseOf core:usedInDataset .
+      rdfs:range loupe:OntologyElementPartition ;
+      owl:inverseOf loupe:usedInDataset .
 
-core:aboutLanguage
+loupe:aboutLanguage
       a       owl:ObjectProperty ;
-      rdfs:domain core:LanguagePatternPartition ;
+      rdfs:domain loupe:LanguagePatternPartition ;
       rdfs:label "aboutLanguage"@en ;
       rdfs:range ontology:Language .
 
-core:PropertyPartition
+loupe:PropertyPartition
       a       owl:Class ;
       rdfs:label "PropertyPartition"@en ;
-      rdfs:subClassOf core:OntologyElementPartition .
+      rdfs:subClassOf loupe:OntologyElementPartition .
 
-core:datasetTripleCount
+loupe:RDFDataProfile
+      a       owl:Class ;
+      rdfs:label "RDF Data Profile"@en ;
+      rdfs:subClassOf loupe:RDFDataset .
+
+loupe:datasetTripleCount
       a       owl:DatatypeProperty ;
       rdfs:domain rdfs:Datatype ;
       rdfs:label "datasetTripleCount"@en ;
       rdfs:range xsd:long ;
       rdfs:seeAlso <http://ont-loupe.linkeddata.es/def/core> ;
-      rdfs:subPropertyOf core:tripleCount .
+      rdfs:subPropertyOf loupe:tripleCount .
 
-core:blankObjectCount
+loupe:blankObjectCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of blank node objects in a collection of triples."@en ;
       rdfs:label "blankObjectCount"@en ;
       rdfs:range xsd:long .
 
-core:PropertyRangeDatatypePartition
+loupe:PropertyRangeDatatypePartition
       a       owl:Class ;
       rdfs:label "PropertyRangeDatatypePartition"@en .
 
-core:propertyCount
+loupe:propertyCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct properties used in a given collection of RDF triples."@en ;
       rdfs:label "propertyCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:commonInstancesCount
+loupe:commonInstancesCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total count of common instances of given two classes in a collection of triples. The count is calculated using the explicit triples materialized in the collection without any inferencing. (e.g., if there is an instance x that is defined as \"x is an instance of Class A\" and \"x is an instance of Class B\", then x is counted as a common instance for class A and B.)"@en ;
-      rdfs:domain core:CommonInstancesPartition ;
+      rdfs:domain loupe:CommonInstancesPartition ;
       rdfs:label "commonInstancesCount"@en ;
       rdfs:range xsd:long .
 
-[]    a       owl:AllDisjointClasses ;
-      owl:members (core:ClassPropertyPartition core:CommonInstancesPartition core:LanguagePatternPartition core:OntologyElementPartition core:PropertyDomainPartition core:PropertyRangeClassPartition core:PropertyRangeDatatypePartition core:RDFDataset core:TriplePatternPartition core:VocabularyPartition) .
-
-core:classCount
+loupe:classCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct RDFS or OWL classes utilized in a collection of triples."@en ;
       rdfs:label "classCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:aboutNamedGraph
+loupe:aboutNamedGraph
       a       owl:ObjectProperty ;
-      rdfs:domain core:NamedGraph ;
+      rdfs:domain loupe:NamedGraph ;
       rdfs:label "aboutNamedGraph"@en ;
       rdfs:range rdfs:Resource .
 
-core:includesProperty
+loupe:includesProperty
       a       owl:ObjectProperty ;
-      rdfs:domain core:VocabularyPartition ;
+      rdfs:domain loupe:VocabularyPartition ;
       rdfs:label "includesProperty"@en ;
       rdfs:range rdf:Property .
 
@@ -327,35 +329,35 @@ core:includesProperty
 dc:title
       a       owl:AnnotationProperty .
 
-core:hasPropertyRangeClassPartition
+loupe:hasPropertyRangeClassPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:ObjectPropertyPartition ;
-      rdfs:range core:PropertyRangeClassPartition .
+      rdfs:domain loupe:ObjectPropertyPartition ;
+      rdfs:range loupe:PropertyRangeClassPartition .
 
-core:usedInDataset
+loupe:usedInDataset
       a       owl:ObjectProperty ;
-      rdfs:domain core:OntologyElementPartition ;
+      rdfs:domain loupe:OntologyElementPartition ;
       rdfs:label "usedInDataset"@en ;
-      rdfs:range core:RDFDataset .
+      rdfs:range loupe:RDFDataset .
 
-core:hasSubjectType
+loupe:hasSubjectType
       a       owl:ObjectProperty ;
-      rdfs:domain core:TriplePatternPartition ;
+      rdfs:domain loupe:TriplePatternPartition ;
       rdfs:label "hasSubjectType"@en ;
       rdfs:range rdfs:Class .
 
-core:VocabularyPartition
+loupe:VocabularyPartition
       a       owl:Class ;
       rdfs:label "VocabularyPartition"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:patternTripleCount
+loupe:patternTripleCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of a triples conforming to a given abstract triple pattern."@en ;
-      rdfs:domain core:TriplePatternPartition ;
+      rdfs:domain loupe:TriplePatternPartition ;
       rdfs:label "patternTripleCount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:tripleCount .
+      rdfs:subPropertyOf loupe:tripleCount .
 
 rdfs:Resource
       a       owl:Class ;
@@ -364,42 +366,45 @@ rdfs:Resource
 rdfs:Class
       a       owl:Class .
 
-core:hasVocabularyPartition
+loupe:hasVocabularyPartition
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasVocabularyPartition"@en ;
-      rdfs:range core:VocabularyPartition .
+      rdfs:range loupe:VocabularyPartition .
 
 ontology:Language
       a       owl:Class .
 
-core:graphTriplecount
+[]    a       owl:AllDisjointClasses ;
+      owl:members (loupe:ClassPropertyPartition loupe:CommonInstancesPartition loupe:LanguagePatternPartition loupe:OntologyElementPartition loupe:PropertyDomainPartition loupe:PropertyRangeClassPartition loupe:PropertyRangeDatatypePartition loupe:RDFDataset loupe:TriplePatternPartition loupe:VocabularyPartition) .
+
+loupe:graphTriplecount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of triples in an RDF graph."@en ;
-      rdfs:domain core:NamedGraph ;
+      rdfs:domain loupe:NamedGraph ;
       rdfs:label "graphTriplecount"@en ;
       rdfs:range xsd:long ;
-      rdfs:subPropertyOf core:tripleCount .
+      rdfs:subPropertyOf loupe:tripleCount .
 
-core:tripleCount
+loupe:tripleCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of triples in a collection of triples (e.g., RDF Dataset, or RDF Graph)."@en ;
       rdfs:label "tripleCount"@en ;
       rdfs:range xsd:long .
 
-core:PropertyRangeClassPartition
+loupe:PropertyRangeClassPartition
       a       owl:Class ;
       rdfs:label "PropertyRangeClassPartition"@en ;
       rdfs:subClassOf owl:Thing .
 
-core:CommonInstancesPartition
+loupe:CommonInstancesPartition
       a       owl:Class ;
       rdfs:label "CommonInstancesPartition"@en ;
       rdfs:subClassOf owl:Thing ;
       rdfs:subClassOf
               [ a       owl:Restriction ;
                 owl:onClass rdfs:Class ;
-                owl:onProperty core:classSharingInstances ;
+                owl:onProperty loupe:classSharingInstances ;
                 owl:qualifiedCardinality
                         "2"^^xsd:nonNegativeInteger
               ] .
@@ -408,31 +413,31 @@ rdf:Property
       a       owl:Class ;
       rdfs:subClassOf owl:Thing .
 
-core:ClassPropertyPartition
+loupe:ClassPropertyPartition
       a       owl:Class ;
       rdfs:label "ClassPropertyPartition"@en .
 
-core:instanceCount
+loupe:instanceCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of instances of a given class."@en ;
-      rdfs:subPropertyOf core:entityCount .
+      rdfs:subPropertyOf loupe:entityCount .
 
-core:hasTriplePattern
+loupe:hasTriplePattern
       a       owl:ObjectProperty ;
-      rdfs:domain core:RDFDataset ;
+      rdfs:domain loupe:RDFDataset ;
       rdfs:label "hasTriplePattern"@en ;
-      rdfs:range core:TriplePatternPartition .
+      rdfs:range loupe:TriplePatternPartition .
 
-core:aboutClass
+loupe:aboutClass
       a       owl:ObjectProperty ;
       rdfs:domain
               [ a       owl:Class ;
-                owl:unionOf (core:ClassPartition core:PropertyDomainPartition core:PropertyRangeClassPartition)
+                owl:unionOf (loupe:ClassPartition loupe:PropertyDomainPartition loupe:PropertyRangeClassPartition)
               ] ;
       rdfs:label "aboutClass"@en ;
       rdfs:range rdfs:Class .
 
-core:vocabularyCount
+loupe:vocabularyCount
       a       owl:DatatypeProperty ;
       rdfs:comment "The total number of distinct vocabularies used in a givel collection of RDF triples either in a class declaration or as a property."@en ;
       rdfs:label "vocabularyCount"@en ;

@@ -1,7 +1,5 @@
 <http://www.w3.org/2002/07/owl#DatatypeProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#DatatypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7fef .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> .
 <http://ont-loupe.linkeddata.es/def/core#aboutLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "aboutLanguage"@en .
 <http://ont-loupe.linkeddata.es/def/core#aboutLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://lexvo.org/ontology#Language> .
 <http://ont-loupe.linkeddata.es/def/core#aboutLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition> .
@@ -15,8 +13,6 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#stringCount> .
 <http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:A5366d425X3aX15a854c989bX3aXX2dX7ffb .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2002/07/owl#ObjectProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://www.w3.org/2002/07/owl#ObjectProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> <http://www.w3.org/2000/01/rdf-schema#label> "ClassPropertyPartition"@en .
@@ -29,18 +25,23 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#aboutNamespace> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Resource> .
 <http://ont-loupe.linkeddata.es/def/core#aboutNamespace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#VocabularyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#aboutNamespace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount> <http://www.w3.org/2000/01/rdf-schema#label> "datatypePropertyCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of datatype properties in a given collection of RDF triples."@en .
 <http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#propertyCount> .
 <http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7fee .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> .
+<http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> <http://www.w3.org/2000/01/rdf-schema#label> "PropertyRangeDatatypePartition"@en .
+<http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#labelledEntityCount> <http://www.w3.org/2000/01/rdf-schema#label> "labelledEntityCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#labelledEntityCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of entities (IRIs and blank nodes) with a label. For counting labels, we consider the properties rdfs:label. skos:prefLabel."@en .
 <http://ont-loupe.linkeddata.es/def/core#labelledEntityCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#labelledEntityCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#entityCount> .
 <http://ont-loupe.linkeddata.es/def/core#labelledEntityCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://ont-loupe.linkeddata.es/def/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "loupe" .
-<http://ont-loupe.linkeddata.es/def/core> <http://purl.org/dc/terms/license> <http://www.apache.org/licenses/LICENSE-2.0> .
 <http://ont-loupe.linkeddata.es/def/core> <http://www.w3.org/2000/01/rdf-schema#comment> "The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset."@en .
 <http://ont-loupe.linkeddata.es/def/core> <http://www.w3.org/2002/07/owl#versionInfo> "0.1.1" .
 <http://ont-loupe.linkeddata.es/def/core> <http://www.w3.org/2000/01/rdf-schema#label> "Loupe Ontology"@en .
@@ -49,17 +50,21 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://ont-loupe.linkeddata.es/def/core#" .
 <http://ont-loupe.linkeddata.es/def/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://ont-loupe.linkeddata.es/def/core> <http://purl.org/dc/terms/creator> "http://purl.org/net/mpoveda"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ont-loupe.linkeddata.es/def/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://ont-loupe.linkeddata.es/def/core> <http://purl.org/dc/terms/creator> "www.garcia-castro.com/foaf.rdf"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <http://ont-loupe.linkeddata.es/def/core> <http://purl.org/dc/elements/1.1/publisher> "http://oeg-upm.net" .
-<http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> <http://www.w3.org/2000/01/rdf-schema#label> "PropertyRangeDatatypePartition"@en .
-<http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition> <http://www.w3.org/2000/01/rdf-schema#label> "DatatypePropertyPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ont-loupe.linkeddata.es/def/core#RDFDataProfile> <http://www.w3.org/2000/01/rdf-schema#label> "RDF Data Profile"@en .
+<http://ont-loupe.linkeddata.es/def/core#RDFDataProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
+<http://ont-loupe.linkeddata.es/def/core#RDFDataProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern> <http://www.w3.org/2000/01/rdf-schema#label> "hasLanguagePattern"@en .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7fef .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> .
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://ont-loupe.linkeddata.es/def/core#datasetTripleCount> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://ont-loupe.linkeddata.es/def/core> .
 <http://ont-loupe.linkeddata.es/def/core#datasetTripleCount> <http://www.w3.org/2000/01/rdf-schema#label> "datasetTripleCount"@en .
@@ -67,16 +72,12 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#datasetTripleCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 <http://ont-loupe.linkeddata.es/def/core#datasetTripleCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#tripleCount> .
 <http://ont-loupe.linkeddata.es/def/core#datasetTripleCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Class> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onProperty> <http://ont-loupe.linkeddata.es/def/core#classSharingInstances> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7fed .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition> <http://www.w3.org/2000/01/rdf-schema#label> "hasVocabularyPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#VocabularyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#unionOf> _:A372a832aX3aX15acd1c0807X3aXX2dX7ffb .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeDatatypePartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeDatatypePartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition> .
@@ -98,13 +99,17 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#classCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#classCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#entityCount> .
 <http://ont-loupe.linkeddata.es/def/core#classCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ffa .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPartition> .
 <http://ont-loupe.linkeddata.es/def/core#commonInstancesCount> <http://www.w3.org/2000/01/rdf-schema#label> "commonInstancesCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#commonInstancesCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total count of common instances of given two classes in a collection of triples. The count is calculated using the explicit triples materialized in the collection without any inferencing. (e.g., if there is an instance x that is defined as \"x is an instance of Class A\" and \"x is an instance of Class B\", then x is counted as a common instance for class A and B.)"@en .
 <http://ont-loupe.linkeddata.es/def/core#commonInstancesCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#commonInstancesCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> .
 <http://ont-loupe.linkeddata.es/def/core#commonInstancesCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/2000/01/rdf-schema#Class> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff5 <http://www.w3.org/2002/07/owl#onProperty> <http://ont-loupe.linkeddata.es/def/core#classSharingInstances> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7fed .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fee <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> .
 <http://lexvo.org/ontology#Language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -116,19 +121,17 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct subjects in a given collection of RDF triples."@en .
 <http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#members> _:A5366d425X3aX15a854c989bX3aXX2dX7ff3 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7fec .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> .
 <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> <http://www.w3.org/2000/01/rdf-schema#label> "PropertyRangeClassPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#instanceCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of instances of a given class."@en .
 <http://ont-loupe.linkeddata.es/def/core#instanceCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#entityCount> .
 <http://ont-loupe.linkeddata.es/def/core#instanceCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ffa .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPartition> .
 <http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#label> "CommonInstancesPartition"@en .
-<http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:A5366d425X3aX15a854c989bX3aXX2dX7ff5 .
+<http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff5 .
 <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#blankSubjectCount> <http://www.w3.org/2000/01/rdf-schema#label> "blankSubjectCount"@en .
@@ -139,18 +142,18 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ff9 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> .
 <http://ont-loupe.linkeddata.es/def/core#vocabularyCount> <http://www.w3.org/2000/01/rdf-schema#label> "vocabularyCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#vocabularyCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct vocabularies used in a givel collection of RDF triples either in a class declaration or as a property."@en .
 <http://ont-loupe.linkeddata.es/def/core#vocabularyCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#vocabularyCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff4 <http://www.w3.org/2002/07/owl#members> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff3 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
 <http://ont-loupe.linkeddata.es/def/core#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#label> "hasNamedGraph"@en .
 <http://ont-loupe.linkeddata.es/def/core#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#NamedGraph> .
 <http://ont-loupe.linkeddata.es/def/core#hasNamedGraph> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasNamedGraph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7fec .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fed <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition> .
 <http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition> <http://www.w3.org/2000/01/rdf-schema#label> "ObjectPropertyPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -159,19 +162,17 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition> <http://www.w3.org/2000/01/rdf-schema#label> "TriplePatternPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ff2 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> <http://www.w3.org/2000/01/rdf-schema#label> "OntologyElementPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7feb .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/2000/01/rdf-schema#label> "patternTripleCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of a triples conforming to a given abstract triple pattern."@en .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition> .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#tripleCount> .
 <http://ont-loupe.linkeddata.es/def/core#patternTripleCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff9 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> .
 <http://ont-loupe.linkeddata.es/def/core#usedInDataset> <http://www.w3.org/2000/01/rdf-schema#label> "usedInDataset"@en .
 <http://ont-loupe.linkeddata.es/def/core#usedInDataset> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#usedInDataset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> .
@@ -179,6 +180,8 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#ClassPartition> <http://www.w3.org/2000/01/rdf-schema#label> "ClassPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#ClassPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> .
 <http://ont-loupe.linkeddata.es/def/core#ClassPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "hasLanguage"@en .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://lexvo.org/ontology#Language> .
 <http://ont-loupe.linkeddata.es/def/core#hasLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
@@ -191,8 +194,10 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#hasElementPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasElementPartition> <http://www.w3.org/2002/07/owl#inverseOf> <http://ont-loupe.linkeddata.es/def/core#usedInDataset> .
 <http://ont-loupe.linkeddata.es/def/core#hasElementPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#unionOf> _:A5366d425X3aX15a854c989bX3aXX2dX7ff7 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff2 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7feb .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fec <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#RDFDataset> .
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <http://www.w3.org/2000/01/rdf-schema#Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#includesClass> <http://www.w3.org/2000/01/rdf-schema#label> "includesClass"@en .
@@ -207,10 +212,6 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#classSharingInstances> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
 <http://ont-loupe.linkeddata.es/def/core#classSharingInstances> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> .
 <http://ont-loupe.linkeddata.es/def/core#classSharingInstances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ff1 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7fea .
-_:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -224,9 +225,11 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#tripleCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://ont-loupe.linkeddata.es/def/core#aboutProperty> <http://www.w3.org/2000/01/rdf-schema#label> "aboutProperty"@en .
 <http://ont-loupe.linkeddata.es/def/core#aboutProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<http://ont-loupe.linkeddata.es/def/core#aboutProperty> <http://www.w3.org/2000/01/rdf-schema#domain> _:A5366d425X3aX15a854c989bX3aXX2dX7ff8 .
+<http://ont-loupe.linkeddata.es/def/core#aboutProperty> <http://www.w3.org/2000/01/rdf-schema#domain> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff8 .
 <http://ont-loupe.linkeddata.es/def/core#aboutProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2000/01/rdf-schema#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff8 <http://www.w3.org/2002/07/owl#unionOf> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff7 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#literalCount> <http://www.w3.org/2000/01/rdf-schema#label> "literalCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#literalCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct literals in a given collection of RDF triples."@en .
 <http://ont-loupe.linkeddata.es/def/core#literalCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
@@ -236,7 +239,7 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://www.w3.org/2000/01/rdf-schema#Datatype> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#aboutClass> <http://www.w3.org/2000/01/rdf-schema#label> "aboutClass"@en .
 <http://ont-loupe.linkeddata.es/def/core#aboutClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
-<http://ont-loupe.linkeddata.es/def/core#aboutClass> <http://www.w3.org/2000/01/rdf-schema#domain> _:A5366d425X3aX15a854c989bX3aXX2dX7ffc .
+<http://ont-loupe.linkeddata.es/def/core#aboutClass> <http://www.w3.org/2000/01/rdf-schema#domain> _:A372a832aX3aX15acd1c0807X3aXX2dX7ffc .
 <http://ont-loupe.linkeddata.es/def/core#aboutClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://ont-loupe.linkeddata.es/def/core#objectPropertyCount> <http://www.w3.org/2000/01/rdf-schema#label> "objectPropertyCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#objectPropertyCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct object properties used in a given collection of RDF triples."@en .
@@ -249,10 +252,10 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#ClassPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#label> "entityCount"@en .
-<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct entities in a given collection of RDF triples. Entities are defined in the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation as any IRI or literal that denotes something in the world. Anything can be an entity, including physical things, documents, abstract concepts, numbers and strings."@en .
-<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
-<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7fea .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff1 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition> .
 <http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <http://ont-loupe.linkeddata.es/def/core#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#label> "hasSubjectType"@en .
 <http://ont-loupe.linkeddata.es/def/core#hasSubjectType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Class> .
@@ -261,8 +264,10 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7feb <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition> <http://www.w3.org/2000/01/rdf-schema#range> <http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ff6 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> .
+<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#label> "entityCount"@en .
+<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct entities in a given collection of RDF triples. Entities are defined in the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation as any IRI or literal that denotes something in the world. Anything can be an entity, including physical things, documents, abstract concepts, numbers and strings."@en .
+<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://ont-loupe.linkeddata.es/def/core#entityCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://ont-loupe.linkeddata.es/def/core#version> <http://www.w3.org/2000/01/rdf-schema#label> "version"@en .
 <http://ont-loupe.linkeddata.es/def/core#version> <http://www.w3.org/2000/01/rdf-schema#comment> "indicates the version of the dataset"@en .
 <http://ont-loupe.linkeddata.es/def/core#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
@@ -277,10 +282,6 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#graphTriplecount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ont-loupe.linkeddata.es/def/core#NamedGraph> .
 <http://ont-loupe.linkeddata.es/def/core#graphTriplecount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#tripleCount> .
 <http://ont-loupe.linkeddata.es/def/core#graphTriplecount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7ff0 .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#VocabularyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#distinctObjectCount> <http://www.w3.org/2000/01/rdf-schema#label> "distinctObjectCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#distinctObjectCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of distinct objects in a given collection of RDF triples."@en .
 <http://ont-loupe.linkeddata.es/def/core#distinctObjectCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
@@ -289,16 +290,18 @@ _:A5366d425X3aX15a854c989bX3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-
 <http://ont-loupe.linkeddata.es/def/core#RDFDataset> <http://www.w3.org/2000/01/rdf-schema#comment> "An RDF dataset as defined by the the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation, i.e., a collection of RDF graphs, and comprises."@en .
 <http://ont-loupe.linkeddata.es/def/core#RDFDataset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
 <http://ont-loupe.linkeddata.es/def/core#RDFDataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff6 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A372a832aX3aX15acd1c0807X3aXX2dX7ff0 .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7ff1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition> .
 <http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7ff6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:A372a832aX3aX15acd1c0807X3aXX2dX7fea <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#VocabularyPartition> .
 <http://ont-loupe.linkeddata.es/def/core#stringCount> <http://www.w3.org/2000/01/rdf-schema#label> "stringCount"@en .
 <http://ont-loupe.linkeddata.es/def/core#stringCount> <http://www.w3.org/2000/01/rdf-schema#comment> "The total number of string objects in a given collection of RDF triples."@en .
 <http://ont-loupe.linkeddata.es/def/core#stringCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
 <http://ont-loupe.linkeddata.es/def/core#stringCount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ont-loupe.linkeddata.es/def/core#literalCount> .
 <http://ont-loupe.linkeddata.es/def/core#stringCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:A5366d425X3aX15a854c989bX3aXX2dX7fee .
-_:A5366d425X3aX15a854c989bX3aXX2dX7fef <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition> .
 <http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> <http://www.w3.org/2000/01/rdf-schema#label> "PropertyPartition"@en .
 <http://ont-loupe.linkeddata.es/def/core#PropertyPartition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition> .
