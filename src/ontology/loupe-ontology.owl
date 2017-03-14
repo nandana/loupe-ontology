@@ -4,7 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix core: <http://ont-loupe.linkeddata.es/def/core#> .
+@prefix loupe: <http://ont-loupe.linkeddata.es/def/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix terms: <http://purl.org/dc/terms/> .
@@ -21,7 +21,7 @@
                                            rdfs:comment "The Loupe ontology provides concepts and relations for describing the statistics about the triples, vocularies used, and common patterns observed in an RDF dataset."@en ;
                                            terms:creator "http://purl.org/net/mpoveda"^^xsd:anyURI ;
                                            rdfs:label "Loupe Ontology"@en ;
-                                           terms:license <http://www.apache.org/licenses/LICENSE-2.0> ;
+                                           terms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                            vann:preferredNamespaceUri "http://ont-loupe.linkeddata.es/def/core#" .
 
 #################################################################
@@ -53,11 +53,11 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  http://ont-loupe.linkeddata.es/def/core#aboutClass
-core:aboutClass rdf:type owl:ObjectProperty ;
+loupe:aboutClass rdf:type owl:ObjectProperty ;
                 rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( core:ClassPartition
-                                            core:PropertyDomainPartition
-                                            core:PropertyRangeClassPartition
+                              owl:unionOf ( loupe:ClassPartition
+                                            loupe:PropertyDomainPartition
+                                            loupe:PropertyRangeClassPartition
                                           )
                             ] ;
                 rdfs:range rdfs:Class ;
@@ -65,31 +65,31 @@ core:aboutClass rdf:type owl:ObjectProperty ;
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#aboutLanguage
-core:aboutLanguage rdf:type owl:ObjectProperty ;
-                   rdfs:domain core:LanguagePatternPartition ;
+loupe:aboutLanguage rdf:type owl:ObjectProperty ;
+                   rdfs:domain loupe:LanguagePatternPartition ;
                    rdfs:range ontology:Language ;
                    rdfs:label "aboutLanguage"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#aboutNamedGraph
-core:aboutNamedGraph rdf:type owl:ObjectProperty ;
-                     rdfs:domain core:NamedGraph ;
+loupe:aboutNamedGraph rdf:type owl:ObjectProperty ;
+                     rdfs:domain loupe:NamedGraph ;
                      rdfs:range rdfs:Resource ;
                      rdfs:label "aboutNamedGraph"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#aboutNamespace
-core:aboutNamespace rdf:type owl:ObjectProperty ;
-                    rdfs:domain core:VocabularyPartition ;
+loupe:aboutNamespace rdf:type owl:ObjectProperty ;
+                    rdfs:domain loupe:VocabularyPartition ;
                     rdfs:range rdfs:Resource ;
                     rdfs:label "aboutNamespace"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#aboutProperty
-core:aboutProperty rdf:type owl:ObjectProperty ;
+loupe:aboutProperty rdf:type owl:ObjectProperty ;
                    rdfs:domain [ rdf:type owl:Class ;
-                                 owl:unionOf ( core:ClassPropertyPartition
-                                               core:PropertyPartition
+                                 owl:unionOf ( loupe:ClassPropertyPartition
+                                               loupe:PropertyPartition
                                              )
                                ] ;
                    rdfs:range rdf:Property ;
@@ -97,125 +97,125 @@ core:aboutProperty rdf:type owl:ObjectProperty ;
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#classSharingInstances
-core:classSharingInstances rdf:type owl:ObjectProperty ;
-                           rdfs:domain core:CommonInstancesPartition ;
+loupe:classSharingInstances rdf:type owl:ObjectProperty ;
+                           rdfs:domain loupe:CommonInstancesPartition ;
                            rdfs:range rdfs:Class ;
                            rdfs:label "classSharingInstances"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasClassPropertyPartition
-core:hasClassPropertyPartition rdf:type owl:ObjectProperty ;
-                               rdfs:domain core:ClassPartition ;
-                               rdfs:range core:ClassPropertyPartition .
+loupe:hasClassPropertyPartition rdf:type owl:ObjectProperty ;
+                               rdfs:domain loupe:ClassPartition ;
+                               rdfs:range loupe:ClassPropertyPartition .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasCommonInstancesPartition
-core:hasCommonInstancesPartition rdf:type owl:ObjectProperty ;
-                                 rdfs:domain core:RDFDataset ;
-                                 rdfs:range core:CommonInstancesPartition ;
+loupe:hasCommonInstancesPartition rdf:type owl:ObjectProperty ;
+                                 rdfs:domain loupe:RDFDataset ;
+                                 rdfs:range loupe:CommonInstancesPartition ;
                                  rdfs:label "hasCommonInstancesPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasElementPartition
-core:hasElementPartition rdf:type owl:ObjectProperty ;
-                         owl:inverseOf core:usedInDataset ;
-                         rdfs:domain core:RDFDataset ;
-                         rdfs:range core:OntologyElementPartition ;
+loupe:hasElementPartition rdf:type owl:ObjectProperty ;
+                         owl:inverseOf loupe:usedInDataset ;
+                         rdfs:domain loupe:RDFDataset ;
+                         rdfs:range loupe:OntologyElementPartition ;
                          rdfs:label "hasElementPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasLanguage
-core:hasLanguage rdf:type owl:ObjectProperty ;
-                 rdfs:domain core:RDFDataset ;
+loupe:hasLanguage rdf:type owl:ObjectProperty ;
+                 rdfs:domain loupe:RDFDataset ;
                  rdfs:range ontology:Language ;
                  rdfs:label "hasLanguage"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasLanguagePattern
-core:hasLanguagePattern rdf:type owl:ObjectProperty ;
-                        rdfs:domain core:RDFDataset ;
-                        rdfs:range core:LanguagePatternPartition ;
+loupe:hasLanguagePattern rdf:type owl:ObjectProperty ;
+                        rdfs:domain loupe:RDFDataset ;
+                        rdfs:range loupe:LanguagePatternPartition ;
                         rdfs:label "hasLanguagePattern"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasNamedGraph
-core:hasNamedGraph rdf:type owl:ObjectProperty ;
-                   rdfs:domain core:RDFDataset ;
-                   rdfs:range core:NamedGraph ;
+loupe:hasNamedGraph rdf:type owl:ObjectProperty ;
+                   rdfs:domain loupe:RDFDataset ;
+                   rdfs:range loupe:NamedGraph ;
                    rdfs:label "hasNamedGraph"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasObjectType
-core:hasObjectType rdf:type owl:ObjectProperty ;
-                   rdfs:domain core:TriplePatternPartition ;
+loupe:hasObjectType rdf:type owl:ObjectProperty ;
+                   rdfs:domain loupe:TriplePatternPartition ;
                    rdfs:range rdfs:Resource ;
                    rdfs:label "hasObjectType"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasPredicate
-core:hasPredicate rdf:type owl:ObjectProperty ;
-                  rdfs:domain core:TriplePatternPartition ;
+loupe:hasPredicate rdf:type owl:ObjectProperty ;
+                  rdfs:domain loupe:TriplePatternPartition ;
                   rdfs:range rdf:Property ;
                   rdfs:label "hasPredicate"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasPropertyDomainPartition
-core:hasPropertyDomainPartition rdf:type owl:ObjectProperty ;
-                                rdfs:domain core:PropertyPartition ;
-                                rdfs:range core:PropertyDomainPartition .
+loupe:hasPropertyDomainPartition rdf:type owl:ObjectProperty ;
+                                rdfs:domain loupe:PropertyPartition ;
+                                rdfs:range loupe:PropertyDomainPartition .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeClassPartition
-core:hasPropertyRangeClassPartition rdf:type owl:ObjectProperty ;
-                                    rdfs:domain core:ObjectPropertyPartition ;
-                                    rdfs:range core:PropertyRangeClassPartition .
+loupe:hasPropertyRangeClassPartition rdf:type owl:ObjectProperty ;
+                                    rdfs:domain loupe:ObjectPropertyPartition ;
+                                    rdfs:range loupe:PropertyRangeClassPartition .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasPropertyRangeDatatypePartition
-core:hasPropertyRangeDatatypePartition rdf:type owl:ObjectProperty ;
-                                       rdfs:domain core:DatatypePropertyPartition ;
-                                       rdfs:range core:PropertyRangeDatatypePartition .
+loupe:hasPropertyRangeDatatypePartition rdf:type owl:ObjectProperty ;
+                                       rdfs:domain loupe:DatatypePropertyPartition ;
+                                       rdfs:range loupe:PropertyRangeDatatypePartition .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasSubjectType
-core:hasSubjectType rdf:type owl:ObjectProperty ;
-                    rdfs:domain core:TriplePatternPartition ;
+loupe:hasSubjectType rdf:type owl:ObjectProperty ;
+                    rdfs:domain loupe:TriplePatternPartition ;
                     rdfs:range rdfs:Class ;
                     rdfs:label "hasSubjectType"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasTriplePattern
-core:hasTriplePattern rdf:type owl:ObjectProperty ;
-                      rdfs:domain core:RDFDataset ;
-                      rdfs:range core:TriplePatternPartition ;
+loupe:hasTriplePattern rdf:type owl:ObjectProperty ;
+                      rdfs:domain loupe:RDFDataset ;
+                      rdfs:range loupe:TriplePatternPartition ;
                       rdfs:label "hasTriplePattern"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#hasVocabularyPartition
-core:hasVocabularyPartition rdf:type owl:ObjectProperty ;
-                            rdfs:domain core:RDFDataset ;
-                            rdfs:range core:VocabularyPartition ;
+loupe:hasVocabularyPartition rdf:type owl:ObjectProperty ;
+                            rdfs:domain loupe:RDFDataset ;
+                            rdfs:range loupe:VocabularyPartition ;
                             rdfs:label "hasVocabularyPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#includesClass
-core:includesClass rdf:type owl:ObjectProperty ;
-                   rdfs:domain core:VocabularyPartition ;
+loupe:includesClass rdf:type owl:ObjectProperty ;
+                   rdfs:domain loupe:VocabularyPartition ;
                    rdfs:range rdfs:Class ;
                    rdfs:label "includesClass"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#includesProperty
-core:includesProperty rdf:type owl:ObjectProperty ;
-                      rdfs:domain core:VocabularyPartition ;
+loupe:includesProperty rdf:type owl:ObjectProperty ;
+                      rdfs:domain loupe:VocabularyPartition ;
                       rdfs:range rdf:Property ;
                       rdfs:label "includesProperty"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#usedInDataset
-core:usedInDataset rdf:type owl:ObjectProperty ;
-                   rdfs:domain core:OntologyElementPartition ;
-                   rdfs:range core:RDFDataset ;
+loupe:usedInDataset rdf:type owl:ObjectProperty ;
+                   rdfs:domain loupe:OntologyElementPartition ;
+                   rdfs:range loupe:RDFDataset ;
                    rdfs:label "usedInDataset"@en .
 
 
@@ -224,38 +224,38 @@ core:usedInDataset rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  http://ont-loupe.linkeddata.es/def/core#blankObjectCount
-core:blankObjectCount rdf:type owl:DatatypeProperty ;
+loupe:blankObjectCount rdf:type owl:DatatypeProperty ;
                       rdfs:range xsd:long ;
                       rdfs:comment "The total number of blank node objects in a collection of triples."@en ;
                       rdfs:label "blankObjectCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#blankSubjectCount
-core:blankSubjectCount rdf:type owl:DatatypeProperty ;
+loupe:blankSubjectCount rdf:type owl:DatatypeProperty ;
                        rdfs:range xsd:long ;
                        rdfs:comment "The total number of blank node subjects in a collection of triples."@en ;
                        rdfs:label "blankSubjectCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#classCount
-core:classCount rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf core:entityCount ;
+loupe:classCount rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf loupe:entityCount ;
                 rdfs:range xsd:long ;
                 rdfs:comment "The total number of distinct RDFS or OWL classes utilized in a collection of triples."@en ;
                 rdfs:label "classCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#commonInstancesCount
-core:commonInstancesCount rdf:type owl:DatatypeProperty ;
-                          rdfs:domain core:CommonInstancesPartition ;
+loupe:commonInstancesCount rdf:type owl:DatatypeProperty ;
+                          rdfs:domain loupe:CommonInstancesPartition ;
                           rdfs:range xsd:long ;
                           rdfs:comment "The total count of common instances of given two classes in a collection of triples. The count is calculated using the explicit triples materialized in the collection without any inferencing. (e.g., if there is an instance x that is defined as \"x is an instance of Class A\" and \"x is an instance of Class B\", then x is counted as a common instance for class A and B.)"@en ;
                           rdfs:label "commonInstancesCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#datasetTripleCount
-core:datasetTripleCount rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf core:tripleCount ;
+loupe:datasetTripleCount rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf loupe:tripleCount ;
                         rdfs:domain rdfs:Datatype ;
                         rdfs:range xsd:long ;
                         rdfs:label "datasetTripleCount"@en ;
@@ -263,129 +263,129 @@ core:datasetTripleCount rdf:type owl:DatatypeProperty ;
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#datatypePropertyCount
-core:datatypePropertyCount rdf:type owl:DatatypeProperty ;
-                           rdfs:subPropertyOf core:propertyCount ;
+loupe:datatypePropertyCount rdf:type owl:DatatypeProperty ;
+                           rdfs:subPropertyOf loupe:propertyCount ;
                            rdfs:range xsd:long ;
                            rdfs:comment "The total number of datatype properties in a given collection of RDF triples."@en ;
                            rdfs:label "datatypePropertyCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#distinctObjectCount
-core:distinctObjectCount rdf:type owl:DatatypeProperty ;
+loupe:distinctObjectCount rdf:type owl:DatatypeProperty ;
                          rdfs:range xsd:long ;
                          rdfs:comment "The total number of distinct objects in a given collection of RDF triples."@en ;
                          rdfs:label "distinctObjectCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#distinctSubjectCount
-core:distinctSubjectCount rdf:type owl:DatatypeProperty ;
+loupe:distinctSubjectCount rdf:type owl:DatatypeProperty ;
                           rdfs:range xsd:long ;
                           rdfs:comment "The total number of distinct subjects in a given collection of RDF triples."@en ;
                           rdfs:label "distinctSubjectCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#entityCount
-core:entityCount rdf:type owl:DatatypeProperty ;
+loupe:entityCount rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:long ;
                  rdfs:comment "The total number of distinct entities in a given collection of RDF triples. Entities are defined in the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation as any IRI or literal that denotes something in the world. Anything can be an entity, including physical things, documents, abstract concepts, numbers and strings."@en ;
                  rdfs:label "entityCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#graphTriplecount
-core:graphTriplecount rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf core:tripleCount ;
-                      rdfs:domain core:NamedGraph ;
+loupe:graphTriplecount rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf loupe:tripleCount ;
+                      rdfs:domain loupe:NamedGraph ;
                       rdfs:range xsd:long ;
                       rdfs:comment "The total number of triples in an RDF graph."@en ;
                       rdfs:label "graphTriplecount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#instanceCount
-core:instanceCount rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf core:entityCount ;
+loupe:instanceCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf loupe:entityCount ;
                    rdfs:comment "The total number of instances of a given class."@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#labelledEntityCount
-core:labelledEntityCount rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf core:entityCount ;
+loupe:labelledEntityCount rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf loupe:entityCount ;
                          rdfs:range xsd:long ;
                          rdfs:comment "The total number of entities (IRIs and blank nodes) with a label. For counting labels, we consider the properties rdfs:label. skos:prefLabel."@en ;
                          rdfs:label "labelledEntityCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#langLabelledStringCount
-core:langLabelledStringCount rdf:type owl:DatatypeProperty ;
-                             rdfs:subPropertyOf core:stringCount ;
+loupe:langLabelledStringCount rdf:type owl:DatatypeProperty ;
+                             rdfs:subPropertyOf loupe:stringCount ;
                              rdfs:range xsd:long ;
                              rdfs:comment "The total number of string objects with a language tag in a given collection of RDF triples."@en ;
                              rdfs:label "language labelled string count"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#literalCount
-core:literalCount rdf:type owl:DatatypeProperty ;
-                  rdfs:subPropertyOf core:entityCount ;
+loupe:literalCount rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf loupe:entityCount ;
                   rdfs:range xsd:long ;
                   rdfs:comment "The total number of distinct literals in a given collection of RDF triples."@en ;
                   rdfs:label "literalCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#objectPropertyCount
-core:objectPropertyCount rdf:type owl:DatatypeProperty ;
-                         rdfs:subPropertyOf core:propertyCount ;
+loupe:objectPropertyCount rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf loupe:propertyCount ;
                          rdfs:range xsd:long ;
                          rdfs:comment "The total number of distinct object properties used in a given collection of RDF triples."@en ;
                          rdfs:label "objectPropertyCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#patternTripleCount
-core:patternTripleCount rdf:type owl:DatatypeProperty ;
-                        rdfs:subPropertyOf core:tripleCount ;
-                        rdfs:domain core:TriplePatternPartition ;
+loupe:patternTripleCount rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf loupe:tripleCount ;
+                        rdfs:domain loupe:TriplePatternPartition ;
                         rdfs:range xsd:long ;
                         rdfs:comment "The total number of a triples conforming to a given abstract triple pattern."@en ;
                         rdfs:label "patternTripleCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#propertyCount
-core:propertyCount rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf core:entityCount ;
+loupe:propertyCount rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf loupe:entityCount ;
                    rdfs:range xsd:long ;
                    rdfs:comment "The total number of distinct properties used in a given collection of RDF triples."@en ;
                    rdfs:label "propertyCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#stringCount
-core:stringCount rdf:type owl:DatatypeProperty ;
-                 rdfs:subPropertyOf core:literalCount ;
+loupe:stringCount rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf loupe:literalCount ;
                  rdfs:range xsd:long ;
                  rdfs:comment "The total number of string objects in a given collection of RDF triples."@en ;
                  rdfs:label "stringCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#tripleCount
-core:tripleCount rdf:type owl:DatatypeProperty ;
+loupe:tripleCount rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:long ;
                  rdfs:comment "The total number of triples in a collection of triples (e.g., RDF Dataset, or RDF Graph)."@en ;
                  rdfs:label "tripleCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#typedEntityCount
-core:typedEntityCount rdf:type owl:DatatypeProperty ;
-                      rdfs:subPropertyOf core:entityCount ;
+loupe:typedEntityCount rdf:type owl:DatatypeProperty ;
+                      rdfs:subPropertyOf loupe:entityCount ;
                       rdfs:range xsd:long ;
                       rdfs:label "typedEntityCount"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#version
-core:version rdf:type owl:DatatypeProperty ;
+loupe:version rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string ;
              rdfs:comment "indicates the version of the dataset"@en ;
              rdfs:label "version"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#vocabularyCount
-core:vocabularyCount rdf:type owl:DatatypeProperty ;
+loupe:vocabularyCount rdf:type owl:DatatypeProperty ;
                      rdfs:range xsd:long ;
                      rdfs:comment "The total number of distinct vocabularies used in a givel collection of RDF triples either in a class declaration or as a property."@en ;
                      rdfs:label "vocabularyCount"@en .
@@ -398,23 +398,28 @@ core:vocabularyCount rdf:type owl:DatatypeProperty ;
 ###  http://lexvo.org/ontology#Language
 ontology:Language rdf:type owl:Class .
 
+###  http://ont-loupe.linkeddata.es/def/core#RDFDataProfile
+loupe:RDFDataProfile rdf:type owl:Class ;
+                    rdfs:subClassOf loupe:RDFDataset ;
+                    rdfs:label "RDF Data Profile"@en .
+
 
 ###  http://ont-loupe.linkeddata.es/def/core#ClassPartition
-core:ClassPartition rdf:type owl:Class ;
-                    rdfs:subClassOf core:OntologyElementPartition ;
+loupe:ClassPartition rdf:type owl:Class ;
+                    rdfs:subClassOf loupe:OntologyElementPartition ;
                     rdfs:label "ClassPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#ClassPropertyPartition
-core:ClassPropertyPartition rdf:type owl:Class ;
+loupe:ClassPropertyPartition rdf:type owl:Class ;
                             rdfs:label "ClassPropertyPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#CommonInstancesPartition
-core:CommonInstancesPartition rdf:type owl:Class ;
+loupe:CommonInstancesPartition rdf:type owl:Class ;
                               rdfs:subClassOf owl:Thing ,
                                               [ rdf:type owl:Restriction ;
-                                                owl:onProperty core:classSharingInstances ;
+                                                owl:onProperty loupe:classSharingInstances ;
                                                 owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
                                                 owl:onClass rdfs:Class
                                               ] ;
@@ -422,72 +427,72 @@ core:CommonInstancesPartition rdf:type owl:Class ;
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#DatatypePropertyPartition
-core:DatatypePropertyPartition rdf:type owl:Class ;
-                               rdfs:subClassOf core:PropertyPartition ;
+loupe:DatatypePropertyPartition rdf:type owl:Class ;
+                               rdfs:subClassOf loupe:PropertyPartition ;
                                rdfs:label "DatatypePropertyPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#LanguagePatternPartition
-core:LanguagePatternPartition rdf:type owl:Class ;
+loupe:LanguagePatternPartition rdf:type owl:Class ;
                               rdfs:subClassOf owl:Thing ;
                               rdfs:label "LanguagePatternPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#NamedGraph
-core:NamedGraph rdf:type owl:Class ;
+loupe:NamedGraph rdf:type owl:Class ;
                 rdfs:subClassOf owl:Thing ;
                 rdfs:label "NamedGraph"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#ObjectPropertyPartition
-core:ObjectPropertyPartition rdf:type owl:Class ;
-                             rdfs:subClassOf core:PropertyPartition ;
+loupe:ObjectPropertyPartition rdf:type owl:Class ;
+                             rdfs:subClassOf loupe:PropertyPartition ;
                              rdfs:label "ObjectPropertyPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#OntologyElementPartition
-core:OntologyElementPartition rdf:type owl:Class ;
+loupe:OntologyElementPartition rdf:type owl:Class ;
                               rdfs:subClassOf owl:Thing ;
                               rdfs:label "OntologyElementPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#PropertyDomainPartition
-core:PropertyDomainPartition rdf:type owl:Class ;
+loupe:PropertyDomainPartition rdf:type owl:Class ;
                              rdfs:subClassOf owl:Thing ;
                              rdfs:label "PropertyDomainPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#PropertyPartition
-core:PropertyPartition rdf:type owl:Class ;
-                       rdfs:subClassOf core:OntologyElementPartition ;
+loupe:PropertyPartition rdf:type owl:Class ;
+                       rdfs:subClassOf loupe:OntologyElementPartition ;
                        rdfs:label "PropertyPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#PropertyRangeClassPartition
-core:PropertyRangeClassPartition rdf:type owl:Class ;
+loupe:PropertyRangeClassPartition rdf:type owl:Class ;
                                  rdfs:subClassOf owl:Thing ;
                                  rdfs:label "PropertyRangeClassPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#PropertyRangeDatatypePartition
-core:PropertyRangeDatatypePartition rdf:type owl:Class ;
+loupe:PropertyRangeDatatypePartition rdf:type owl:Class ;
                                     rdfs:label "PropertyRangeDatatypePartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#RDFDataset
-core:RDFDataset rdf:type owl:Class ;
+loupe:RDFDataset rdf:type owl:Class ;
                 rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
                 rdfs:comment "An RDF dataset as defined by the the RDF 1.1 Concepts and Abstract Syntax W3C Recommendation, i.e., a collection of RDF graphs, and comprises."@en ;
                 rdfs:label "RDFDataset"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#TriplePatternPartition
-core:TriplePatternPartition rdf:type owl:Class ;
+loupe:TriplePatternPartition rdf:type owl:Class ;
                             rdfs:label "TriplePatternPartition"@en .
 
 
 ###  http://ont-loupe.linkeddata.es/def/core#VocabularyPartition
-core:VocabularyPartition rdf:type owl:Class ;
+loupe:VocabularyPartition rdf:type owl:Class ;
                          rdfs:subClassOf owl:Thing ;
                          rdfs:label "VocabularyPartition"@en .
 
@@ -530,16 +535,16 @@ owl:ObjectProperty rdf:type owl:Class ;
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( core:ClassPropertyPartition
-                core:CommonInstancesPartition
-                core:LanguagePatternPartition
-                core:OntologyElementPartition
-                core:PropertyDomainPartition
-                core:PropertyRangeClassPartition
-                core:PropertyRangeDatatypePartition
-                core:RDFDataset
-                core:TriplePatternPartition
-                core:VocabularyPartition
+  owl:members ( loupe:ClassPropertyPartition
+                loupe:CommonInstancesPartition
+                loupe:LanguagePatternPartition
+                loupe:OntologyElementPartition
+                loupe:PropertyDomainPartition
+                loupe:PropertyRangeClassPartition
+                loupe:PropertyRangeDatatypePartition
+                loupe:RDFDataset
+                loupe:TriplePatternPartition
+                loupe:VocabularyPartition
               )
 ] .
 
